@@ -1,0 +1,1311 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 14, in insertNewStreet
+    app.logger.info('Loaded Streets and Districts')
+AttributeError: module 'app' has no attribute 'logger'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 01:14:08] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 01:22:17] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 01:26:25] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 19, in insertNewStreet
+    if value in values:
+TypeError: descriptor 'get' for 'dict' objects doesn't apply to a 'str' object
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 01:48:04] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.Debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 14:49:38] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 14:49:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 14:51:15] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.Debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 14:53:23] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:01:00] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:01:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.Debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:01:26] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.Debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:04:12] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.Debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:10:56] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 21, in insert_items
+    return insertNewStreet("1", "AbC")
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 24, in insertNewStreet
+    logging.debug('key ' + key + ' doesnt exist or value already exists');
+AttributeError: module 'logging' has no attribute 'Debug'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:11:06] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 15:12:57] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2021 16:12:45] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 21:59:10] "[33mGET /insert-newitem HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 21:59:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:00:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:00:25] "[33mGET /insert-newitem HTTP/1.1[0m" 404 -
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:00:48] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:09:31] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:09:33] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:10:34] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:16:19] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:18:39] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:18:41] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:18:53] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 22:25:39] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:02:47] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:03:48] "[31m[1mGET /insert-item HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:03:56] "[31m[1mGET /insert-item HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:05:00] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:06:37] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:06:39] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:07:17] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 22, in insert_items
+    return jsonify(insert_newstreet("1", "AbC"))
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Result is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:10:51] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 22, in insert_items
+    return jsonify(insert_newstreet("1", "AbC"))
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Result is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:10:53] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 22, in insert_items
+    return jsonify(insert_newstreet("1", "AbC"))
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Result is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:10:55] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:28:13] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:30:52] "[33mGET /_debug HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:48:06] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in getstreetsanddistricts
+    with open('./streetsAndDistricts.json') as jsonFile:
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in <lambda>
+    with open('./streetsAndDistricts.json') as jsonFile:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:56:15] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in getstreetsanddistricts
+    with open('./streetsAndDistricts.json') as jsonFile:
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in <lambda>
+    with open('./streetsAndDistricts.json') as jsonFile:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:56:29] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in getstreetsanddistricts
+    with open('./streetsAndDistricts.json') as jsonFile:
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in <lambda>
+    with open('./streetsAndDistricts.json') as jsonFile:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:58:11] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in getstreetsanddistricts
+    with open('./streetsAndDistricts.json') as jsonFile:
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 36, in <lambda>
+    with open('./streetsAndDistricts.json') as jsonFile:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:58:11] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 38, in getstreetsanddistricts
+    mydict: dict[Any, int] = dict(map(lambda x: (x[0], int(x[1])), data.items()))
+  File "D:\Anusha College Project\TreeManagementApi\json_controller.py", line 38, in <lambda>
+    mydict: dict[Any, int] = dict(map(lambda x: (x[0], int(x[1])), data.items()))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2021 23:59:27] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streets [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Anusha College Project\TreeManagementApi\app.py", line 27, in get_streets
+    return jsonify(getstreetsanddistricts())
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\tejas\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type dict_items is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 00:04:55] "[35m[1mGET /get-streets HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 00:37:33] "[37mGET /get-streets HTTP/1.1[0m" 200 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+ERROR:app:Exception on /insert-item [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Result.
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 00:44:22] "[35m[1mGET /insert-item HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:09:28] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:10:22] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:30:59] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:31:50] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:32:19] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:38:08] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:39:28] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:43:49] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:root:Loaded Streets and Districts
+DEBUG:root:key 1 doesnt exist or value already exists
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:43:53] "[37mGET /insert-item HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 01:44:34] "[37mGET /delete-streets HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 18:24:42] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 18:24:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Loaded Issues and Priorities
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Loaded Issues and Priorities
+DEBUG:root:Widowmakeralready exists for 4
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 18:29:12] "[37mGET /insert-issue HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 18:47:06] "[33mGET /get-streets HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2021 18:47:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 21:58:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 21:58:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:14:39] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:16:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:45:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:45:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:49:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 22:50:46] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:03:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:03:03] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:03:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:07:57] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:07:58] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:08:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:13:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:17:51] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:21:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:23:16] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:23:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:23:32] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:23:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:26:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:26:31] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:27:12] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:27:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:28:23] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:28:23] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:28:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:28:39] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:28:39] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:41:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:42:11] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:46:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:46:20] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:46:56] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:46:56] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:48:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:48:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:48:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:48:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:51:34] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:51:34] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:51:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:52:27] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:52:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:54:44] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Mar/2021 23:54:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 22:31:33] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 22:31:33] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:28:30] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:28:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:28:40] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:28:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:31:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:31:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:31:37] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:31:37] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:32:37] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:32:37] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:34:08] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:34:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:34:55] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:34:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:35:06] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:35:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:36:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:36:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:37:55] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:37:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:37:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:38:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:38:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:39:13] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:39:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:39:35] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:39:35] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:40:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:40:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:40:19] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:40:19] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:48:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:48:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:48:12] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:48:12] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:48:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:54:30] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:54:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:54:50] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:54:50] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:55:54] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:55:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:56:16] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:56:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:56:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:56:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:27] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:33] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:33] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:53] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:53] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:57:57] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:58:24] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:58:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:58:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:58:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:16] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:52] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2021 23:59:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:07] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:07] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:13] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:17] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:00:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:01:44] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:01:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:01:58] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:01:58] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:18] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:36] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:36] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:44] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:02:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:05:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:05:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:12] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:12] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:48] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:06:48] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:07:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:07:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:09:13] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:09:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:09:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:12:04] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:12:04] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:12:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:12:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:12:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:14:08] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:14:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:14:11] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:14:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:14:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:15:24] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:15:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:15:41] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:15:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:16:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:16:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:16:09] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:16:09] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:19:31] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:19:31] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:20:45] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:20:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:21:36] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:21:36] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:21:51] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:21:51] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:22:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:22:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:22:26] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:32] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:55] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:23:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:24:42] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:24:42] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:06] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:35] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:35] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:48] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:48] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:25:51] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:26:06] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:26:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:26:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:26:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:27:08] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:27:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:27:28] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:27:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:30:26] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:30:26] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:30:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:31:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:32:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:32:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:33:06] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:33:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:35:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:35:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:37:37] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:37:37] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:37:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:45:18] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:45:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:47:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:47:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:48:56] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:48:56] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:53:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:53:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:53:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:53:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:13] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:20] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:20] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:43] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:54:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:48] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:48] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:50] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:55:51] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:56:58] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:56:58] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:57:38] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:57:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:58:19] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:58:19] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:58:43] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:58:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:59:16] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:59:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:59:32] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 00:59:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 01:00:00] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 01:00:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 01:00:18] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 01:00:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 22:40:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 22:40:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:03:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:03:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:04:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:04:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:04:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:04:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:05:12] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:05:12] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:05:54] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:05:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:11:41] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:11:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:32:17] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:32:17] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:49:03] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:49:03] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:52:49] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:52:49] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:53:20] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:53:20] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:54:03] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2021 23:54:03] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:04:39] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:04:39] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:05:40] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:05:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:05:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:06:12] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:06:12] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:10:38] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:10:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:11:42] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:11:42] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:34:07] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:34:07] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:37:10] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:37:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:37:55] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:37:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:43:49] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:43:49] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:47:10] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:47:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:49:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:49:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:53:09] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:53:09] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:53:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:53:15] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:53:15] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:57:01] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:57:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:57:15] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:57:15] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:59:55] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 00:59:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:01:28] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:01:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:01:54] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:01:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:02:56] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:02:56] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:04:33] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:04:33] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:05:15] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:05:15] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:04] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:04] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:20] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:20] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:36] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:36] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:50] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:08:50] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:11:32] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:11:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:23] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:23] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:30] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:43] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:12:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:13:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:13:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:13:31] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:13:31] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:17:10] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:17:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:17:27] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:17:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:18:40] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:18:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:19:04] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:19:04] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:21:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:21:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:23:23] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:23:23] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:23:52] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:23:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:24:52] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:24:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:25:05] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:25:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:29:54] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:29:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:30:28] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:30:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:30:38] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:30:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:31:02] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:31:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:31:10] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:31:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:33:40] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:33:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:36:10] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:36:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:36:23] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:36:23] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:38:46] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:38:46] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:08] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:19] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:19] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:30] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:41:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:13] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:25] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:36] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:36] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:52] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:44:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:45:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:45:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:49:06] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:49:06] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:49:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:49:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:56:00] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:56:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:57:56] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:57:56] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:58:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:58:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 01:58:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:01:48] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:01:48] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:02:43] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:02:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:11:41] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:11:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:11:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:11:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:11:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:20:09] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2021 02:20:09] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:33:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:33:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:33:54] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:33:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:45:09] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:45:09] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:45:28] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:45:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:11] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:11] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:37] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:37] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:45] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:46:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:47:26] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:47:26] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:58:57] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2021 23:58:57] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:00:11] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:00:11] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:00:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:00:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:01:19] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:01:19] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:28:47] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:28:47] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:30:41] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:30:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:32:18] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 00:32:18] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 13:41:42] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 13:41:42] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:24:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:24:28] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:root:Loaded Streets and Districts
+INFO:root:Appended AbC to 1Streets and Districts
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:25:17] "[37mGET /insert-newstreet HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:25:17] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:26:59] "[37mGET /delete-street HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:26:59] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:27:01] "[37mGET /delete-street HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:27:01] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:30:09] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:30:09] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:34:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:34:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:35:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:38:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:38:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:39:07] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:39:07] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:16] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:35] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:35] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:43] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:57] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:40:57] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:52:00] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:52:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:52:24] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:52:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2021 22:52:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
