@@ -1,3 +1,5 @@
+from datetime import datetime
+import uuid
 from flask import Flask, jsonify, request
 import db_controller
 from json_controller import insert_newstreet, get_streetsanddistricts, delete_streetsanddistricts, insert_newIssue, \
@@ -44,6 +46,14 @@ def insert_issue():
 def get_issueandpriority():
     return get_issuesandpriorities()
 
+@app.route('/insert-newevent', methods=['GET', 'POST'])
+def insert_newevent():
+    return jsonify(db_controller.insert_newevent(str(uuid.uuid4()),"04042021","","Beach Drive","11","1","testUser","Fallen Branch on House/Car",False,"testdata","New_Issue","2"))
+    #return jsonify(db_controller.insert_newevent1())
+
+@app.route('/get-event', methods=['GET'])
+def get_event():
+    return jsonify(db_controller.get_event('tm0k001','03302021'))
 
 @app.errorhandler(Exception)
 def basic_error(e):
@@ -53,6 +63,7 @@ def basic_error(e):
 
     print("User with IP %s tried to access endpoint: %s" % (user_ip, requested_path))
     return "An error occurred: " + str(e)
+
 
 
 if __name__ == '__main__':
