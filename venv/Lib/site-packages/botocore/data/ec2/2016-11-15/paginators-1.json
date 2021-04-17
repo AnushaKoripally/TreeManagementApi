@@ -589,6 +589,18 @@
       "limit_key": "MaxResults",
       "output_token": "NextToken",
       "result_key": "Addresses"
+    },
+    "DescribeReplaceRootVolumeTasks": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "ReplaceRootVolumeTasks"
+    },
+    "DescribeStoreImageTasks": {
+      "input_token": "NextToken",
+      "limit_key": "MaxResults",
+      "output_token": "NextToken",
+      "result_key": "StoreImageTaskResults"
     }
   }
 }

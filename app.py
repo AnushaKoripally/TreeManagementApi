@@ -2,13 +2,16 @@ from datetime import datetime
 import uuid
 from flask import Flask, jsonify, request
 import db_controller
+import json
 from json_controller import insert_newstreet, get_streetsanddistricts, delete_streetsanddistricts, insert_newIssue, \
     get_issuesandpriorities
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
+from fastapi import FastAPI
+from fastapi import Request
 import logging
 
 app = Flask(__name__)
-logging.basicConfig(filename='Application.log', level=logging.DEBUG)
+#logging.basicConfig(filename='./Application.log', level=logging.DEBUG)
 CORS(app)
 
 
@@ -46,14 +49,35 @@ def insert_issue():
 def get_issueandpriority():
     return get_issuesandpriorities()
 
+
 @app.route('/insert-newevent', methods=['GET', 'POST'])
 def insert_newevent():
-    return jsonify(db_controller.insert_newevent(str(uuid.uuid4()),"04042021","","Beach Drive","11","1","testUser","Fallen Branch on House/Car",False,"testdata","New_Issue","2"))
-    #return jsonify(db_controller.insert_newevent1())
+    post = json.loads(request.data)
+    houseNumber = post.get('houseNumber')
+    street = post.get('street')[0]
+    distict = post.get('district')
+    utilityConflict = post.get('utilityConflict')
+    issue = post.get('issue')[0]
+    priority = post.get('priority')
+    notes = post.get('notes')
+    eventimages = post.get('eventimages')
+    createdDate = post.get('createdDate')
+    modifiedDate = post.get('modifiedDate')
+    return jsonify(
+        db_controller.insert_newevents(houseNumber, street, distict, issue, priority,utilityConflict, notes, eventimages,createdDate,modifiedDate))
+   # houseNumber,streetName,District,Issue,Priority,UtilityConflict,Notes
+   # db_controller.insert_newevent(str(uuid.uuid4()), "04042021", "", "Beach Drive", "11", "1", "testUser",
+   # "Fallen Branch on House/Car", False, "testdata", "New_Issue", "2"))
+
+
+   # return jsonify(db_controller.insert_newevent1())
+
+
 
 @app.route('/get-event', methods=['GET'])
 def get_event():
-    return jsonify(db_controller.get_event('tm0k001','03302021'))
+    return jsonify(db_controller.get_event('tm0k001', '03302021'))
+
 
 @app.errorhandler(Exception)
 def basic_error(e):
@@ -65,6 +89,6 @@ def basic_error(e):
     return "An error occurred: " + str(e)
 
 
-
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=5000)
+    # host =
+    app.run("127.0.0.1", port=5000)

@@ -6721,3 +6721,633 @@ DEBUG:botocore.hooks:Event needs-retry.dynamodb.PutItem: calling handler <botoco
 DEBUG:botocore.retryhandler:No retry needed.
 INFO:werkzeug:127.0.0.1 - - [04/Apr/2021 23:50:27] "[37mGET /insert-newevent HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Apr/2021 23:50:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:02:48] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:02:48] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:27] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:27] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:27] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:54] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:03:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:00] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:00] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:00] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:29] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:29] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:29] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:35] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:04:35] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:06:33] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:06:33] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:06:33] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:06:33] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:10:32] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:10:32] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:10:32] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:10:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:13:30] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:13:30] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:13:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:13:30] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:28] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:28] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:28] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:28] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:34] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:34] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:34] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:34] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:38] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:38] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:40] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:43] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:15:43] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:27:45] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:27:45] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:27:45] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:27:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:37:59] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:37:59] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:37:59] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:37:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:48:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:48:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:48:59] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:48:59] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:03] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:03] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:07] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:13] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:50:13] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:00] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:01] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:08] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:08] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:37] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:37] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:57] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:51:57] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:52:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:52:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:53:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:53:25] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:53:26] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:53:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:54:10] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:54:10] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:54:16] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:54:16] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:56:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 21:56:21] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:00:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:00:29] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:01:39] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:01:39] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:36] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:39] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:41] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:41] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:44] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:44] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:44] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:48] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:02:48] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:34] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:34] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:34] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:34] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:44] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:44] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:44] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:05:44] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:06:29] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:06:30] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:06:55] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:06:55] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:11:22] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:11:22] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:11:22] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:11:22] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:23:40] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:23:40] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:31] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:45] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:52] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:34:53] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:01] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:01] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:02] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:32] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:36:44] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:37:58] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:37:58] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:37:58] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:37:58] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:38:27] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:38:27] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:38:39] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:38:39] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:39:57] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:39:57] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:39:57] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:39:57] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:40:21] "[37mOPTIONS /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:40:21] "[37mOPTIONS /get-issueandpriority HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:40:21] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:40:21] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:23] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:25] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:41:25] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:44:24] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:44:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:6000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:49:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:01] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:05] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:13] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:13] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /get-issueandpriority [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:47] "[37mGET /get-issueandpriority HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:53] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:53] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:55] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:55] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:56] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:50:56] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR:app:Exception on /get-streetsanddistricts [GET]
+Traceback (most recent call last):
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "D:\Anusha College Project\TreeManagementApi\venv\lib\site-packages\flask\app.py", line 2127, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a dict_items.
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:51:07] "[37mGET /get-streetsanddistricts HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2021 22:51:07] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
