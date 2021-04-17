@@ -28,7 +28,7 @@ def insert_newevent1():
 
 def insert_newevents(houseNumber, streetName, District, Issue, Priority, UtilityConflict, Notes, images, createdDate,
                      modifiedDate):
-    eventId = 'TS' + ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
+    eventId :str  = 'TS' + ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
     # eventId = uuid.uuid4()
     User: str = "Anusha"
     Status: str = "Created"
@@ -38,12 +38,12 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
         response = dynamo_client.put_item(
             TableName='Events',
             Item={
-                'EventId': {'S': str(eventId)},
+                'EventId': {'S': eventId},
                 'CreatedDate': {'S': createdDate},
                 'ModifiedDate': {'S': modifiedDate},
                 'StreetName': {'S': streetName},
                 'HouseNumber': {'S': houseNumber},
-                'District': {'S': District},
+                'District': {'N': District},
                 'User': {'S': User},
                 'Issue': {'S': Issue},
                 'UtilityConflict': {'BOOL': UtilityConflict},
@@ -56,6 +56,8 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
     except ClientError as e:
         logging.debug(e.response['Error']['Message'])
         error = 'Error while inserting record'
+        print(error)
+        print(e)
         return '{} {} {} {}'.format(False, None, error, e)
 
 
