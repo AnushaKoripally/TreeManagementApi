@@ -9,6 +9,12 @@ from json_controller import insert_newstreet, get_streetsanddistricts, delete_st
 from flask_cors import CORS
 from fastapi import FastAPI
 from fastapi import Request
+
+from datetime import datetime, timedelta, time
+import jwt
+from register import register, get_user, encode_auth_token
+from botocore.exceptions import ClientError
+
 import logging
 BUCKET = "tm-photo-storage"
 app = Flask(__name__)
@@ -76,6 +82,170 @@ def downloadS3File():
 def get_event():
     return jsonify(db_controller.get_event('tm0k001', '03302021'))
 
+
+@app.route('/get-profile', methods=['POST'])
+def get_profile():
+    received_json_data = request.data.decode('UTF-8')
+    string_data = received_json_data
+    Email = string_data
+    temp_json_data = get_items().get_json()
+    temp_tab_data = json.dumps(temp_json_data, indent=4)
+    user_data = json.loads(temp_tab_data)
+    for Items in user_data['Items']:
+        temp_email = Items['Email']
+        try:
+         if (temp_email['S'] == Email):
+            user = {
+                'Email': Email,
+                'FirstName': Items['FirstName'],
+                'LastName': Items['LastName'],
+                'Role': Items['UserRole'],
+                'Username': Items['Username']
+            }
+            response = json.dumps(user)
+            return response
+
+        except ClientError as e:
+            logging.debug(e.response['Error']['Message'])
+            error = 'Error Email not found.'
+            response = {'Message': error}
+            return jsonify(response)
+
+@app.route('/get-user', methods=['POST', 'GET'])
+def get_user():
+    received_json_data = request.get_json()
+    temp_data = json.dumps(received_json_data, indent=4)
+    string_data = json.loads(temp_data)
+    Email = string_data['email']
+    Password = string_data['password']
+
+    temp_json_data = get_items().get_json()
+    temp_tab_data = json.dumps(temp_json_data, indent= 4)
+    user_data = json.loads(temp_tab_data)
+
+    for Items in user_data['Items']:
+        temp_email = Items['Email']
+        try:
+         if (temp_email['S'] == Email):
+          temp_password = Items['Password']
+          try:
+           if (temp_password['S'] == Password):
+              user = {
+                  'Email': Email,
+                  'FirstName': Items['FirstName'],
+                  'LastName': Items['LastName'],
+                  'Role': Items['UserRole'],
+                  'Username': Items['Username'],
+                  'Password': Items['Password']
+              }
+
+              # create JWToken
+              jwtoken = encode_auth_token(user)
+              response = requests.get('http://httpbin.org/get', jwtoken)
+              return response.json()
+          except ClientError as e:
+            logging.debug(e.response['Error']['Message'])
+            error = 'Error Email and Password doesnot match.'
+            response = {'Message': error}
+            return jsonify(response)
+        except ClientError as e:
+            logging.debug(e.response['Error']['Message'])
+            error = 'Error Email and Password doesnot match.'
+            response = {'Message': error}
+            return jsonify(response)
+
+@app.route('/registration/', methods=['POST', 'GET'])
+def register():
+    entryFlag = 1;
+    received_json_data=request.get_json()
+    temp_data = json.dumps(received_json_data, indent=4)
+    string_data = json.loads(temp_data)
+
+    FirstName = string_data['FirstName']
+    LastName = string_data['LastName']
+    Email = string_data['Email']
+    Username = string_data['Username']
+    Password = string_data['Password']
+    Role = string_data['UserRole']
+    temp_json_data = get_items().get_json()
+    temp_tab_data = json.dumps(temp_json_data, indent=4)
+    user_data = json.loads(temp_tab_data)
+    for Items in user_data['Items']:
+        temp_username = Items['Username']
+        temp_email = Items['Email']
+        if temp_username['S'] == Username:
+            entryFlag = 0
+            break
+        elif temp_email['S'] == Email:
+            entryFlag = 0
+            break
+
+    if entryFlag:
+                dynamodb_client = boto3.client('dynamodb', endpoint_url="http://localhost:8000")
+                date = datetime.today().strftime('%Y-%m-%d')
+                try:
+                    response = dynamodb_client.put_item(
+                    TableName='Users',
+                    Item={
+                        'FirstName': {'S': FirstName},
+                        'LastName': {'S': LastName},
+                        'Email': {'S': Email},
+                        'Username': {'S': Username},
+                        'Password': {'S': Password},
+                        'UserRole': {'S': Role},
+                        'CreatedDate': {'S': date},
+                        'ModifiedDate': {'S': date}
+                        }
+                    )
+                    response = {'Message':'Success'}
+                    return jsonify(response)
+                except ClientError as e:
+                    logging.debug(e.response['Error']['Message'])
+                    error = 'Error while inserting record'
+                    response = {'Message': error}
+                    return jsonify(response)
+    else:
+        error = 'Email/Username already exists!'
+        response = {'Message': error}
+        return jsonify(response)
+
+@app.route('/update-user/', methods=['POST', 'GET'])
+def update_user():
+    entryFlag = 1;
+    received_json_data=request.get_json()
+    temp_data = json.dumps(received_json_data, indent=4)
+    string_data = json.loads(temp_data)
+
+    FirstName = string_data['FirstName']
+    LastName = string_data['LastName']
+    Email = string_data['Email']
+    Username = string_data['Username']
+    Password = string_data['Password']
+    Role = string_data['UserRole']
+    date = datetime.today().strftime('%Y-%m-%d')
+    dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
+    try:
+                    table = dynamodb.Table('Users')
+                    response = table.update_item(
+                    Key={
+                        'Username': Username },
+                    UpdateExpression = "set FirstName=:fn, LastName=:ln, Email=: em, Password=:pw, UserRole=:rl, ModifiedDate=:md",
+                    ExpressionAttributeValues = {
+                        ':fn': FirstName,
+                        ':ln': LastName,
+                        ':em': Email,
+                        ':pw': Password,
+                        ':rl': Role,
+                        ':md': date
+                        },
+                    ReturnValues="UPDATED_NEW",
+                    )
+                    return response
+    except ClientError as e:
+                    logging.debug(e.response['Error']['Message'])
+                    error = 'Error while updating record'
+                    response = {'Message': error}
+                    return jsonify(response)
 
 @app.errorhandler(Exception)
 def basic_error(e):
