@@ -1,16 +1,13 @@
-import uuid
-from typing import Tuple, Any
-
 import boto3
 import logging
 import sys
 import random
-
+from s3_controller import list_files, upload_file, download_file
 from botocore.exceptions import ClientError
 from datetime import datetime
-
+#from typing import Tuple, Any
 sys.setrecursionlimit(10 ** 6)
-
+BUCKET = "tm-photo-storage"
 dynamo_client = boto3.client('dynamodb', endpoint_url="http://localhost:8000")
 
 
@@ -20,20 +17,27 @@ def get_items():
     )
 
 
-def insert_newevent1():
-    return dynamo_client.scan(
-        TableName='Events'
-    )
-
-
 def insert_newevents(houseNumber, streetName, District, Issue, Priority, UtilityConflict, Notes, images, createdDate,
                      modifiedDate):
     eventId :str  = 'TS' + ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
-    # eventId = uuid.uuid4()
     User: str = "Anusha"
     Status: str = "Created"
+    photos = []
 
+    photos = []
     logging.info('To insert new event')
+
+    # if request contain photos
+    if (images.length > 0):
+        for p in images:
+            s3_response = upload_file('C:\\Users\\Shobitha\\Desktop\\'+p, BUCKET, p ,eventId)
+            s3_response = True
+            if (s3_response):
+                s3folder = {"S": eventId + '/' + p}
+                photos.append(s3folder)
+    else:
+        photos = []
+    print(photos)
     try:
         response = dynamo_client.put_item(
             TableName='Events',
@@ -49,11 +53,14 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
                 'UtilityConflict': {'BOOL': UtilityConflict},
                 'Notes': {'S': Notes},
                 'Status': {'S': Status},
+                'Photos': {
+                    'L': photos
+                },
                 'Priority': {'N': Priority},
             }
         )
         return '{} {} {}'.format(True, None, None)
-    except ClientError as e:
+    except Exception as e:
         logging.debug(e.response['Error']['Message'])
         error = 'Error while inserting record'
         print(error)

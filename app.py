@@ -3,13 +3,14 @@ import uuid
 from flask import Flask, jsonify, request
 import db_controller
 import json
+from s3_controller import download_file
 from json_controller import insert_newstreet, get_streetsanddistricts, delete_streetsanddistricts, insert_newIssue, \
     get_issuesandpriorities
 from flask_cors import CORS
 from fastapi import FastAPI
 from fastapi import Request
 import logging
-
+BUCKET = "tm-photo-storage"
 app = Flask(__name__)
 #logging.basicConfig(filename='./Application.log', level=logging.DEBUG)
 CORS(app)
@@ -55,24 +56,21 @@ def insert_newevent():
     post = json.loads(request.data)
     houseNumber = post.get('houseNumber')
     street = post.get('street')[0]
-    distict = post.get('district')
+    distict = str(post.get('district'))
     utilityConflict = post.get('utilityConflict')
     issue = post.get('issue')[0]
-    priority = post.get('priority')
+    priority = str(post.get('priority'))
     notes = post.get('notes')
     eventimages = post.get('eventimages')
     createdDate = post.get('createdDate')
     modifiedDate = post.get('modifiedDate')
-    return jsonify(
-        db_controller.insert_newevents(houseNumber, street, distict, issue, priority,utilityConflict, notes, eventimages,createdDate,modifiedDate))
-   # houseNumber,streetName,District,Issue,Priority,UtilityConflict,Notes
-   # db_controller.insert_newevent(str(uuid.uuid4()), "04042021", "", "Beach Drive", "11", "1", "testUser",
-   # "Fallen Branch on House/Car", False, "testdata", "New_Issue", "2"))
+    return jsonify( db_controller.insert_newevents(houseNumber, street, distict, issue, priority,utilityConflict, notes, eventimages,createdDate,modifiedDate))
 
-
-   # return jsonify(db_controller.insert_newevent1())
-
-
+@app.route('/download', methods=['GET'])
+def downloadS3File():
+    post = json.loads(request.data)
+    eventId = post.get('eventId')
+    return download_file(eventId, BUCKET)
 
 @app.route('/get-event', methods=['GET'])
 def get_event():
