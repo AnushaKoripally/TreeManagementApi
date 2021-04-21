@@ -1,5 +1,8 @@
 from datetime import datetime
 import uuid
+
+import boto3
+import requests
 from flask import Flask, jsonify, request
 import db_controller
 import json
@@ -83,7 +86,7 @@ def get_event():
     return jsonify(db_controller.get_event('tm0k001', '03302021'))
 
 
-@app.route('/get-profile', methods=['POST'])
+@app.route('/get-profile', methods=['POST', 'GET'])
 def get_profile():
     received_json_data = request.data.decode('UTF-8')
     string_data = received_json_data

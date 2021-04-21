@@ -10,13 +10,11 @@ from operator import itemgetter
 import requests
 import boto3
 from botocore.exceptions import ClientError
-from application import app
 from db_controller import get_items
 
 dynamo_client = boto3.client('dynamodb',endpoint_url = 'http://localhost:8000' )
 
 def get_user():
-    def get_user():
         received_json_data = request.get_json()
         temp_data = json.dumps(received_json_data, indent=4)
         string_data = json.loads(temp_data)
@@ -60,7 +58,6 @@ def get_user():
 
 
 def register():
-    def register():
         entryFlag = 1;
         received_json_data = request.get_json()
         temp_data = json.dumps(received_json_data, indent=4)
@@ -139,7 +136,6 @@ def encode_auth_token(user):
         return e
 
 def get_profile():
-    def get_profile():
         received_json_data = request.data.decode('UTF-8')
         string_data = received_json_data
         Email = string_data
