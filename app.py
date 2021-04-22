@@ -15,7 +15,8 @@ from fastapi import Request
 
 from datetime import datetime, timedelta, time
 import jwt
-from register import register, get_user, encode_auth_token
+#from register import register, get_user, encode_auth_token
+from register import register, get_user
 from botocore.exceptions import ClientError
 
 import logging
@@ -100,10 +101,11 @@ def get_profile():
          if (temp_email['S'] == Email):
             user = {
                 'Email': Email,
-                'FirstName': Items['FirstName'],
-                'LastName': Items['LastName'],
-                'Role': Items['UserRole'],
-                'Username': Items['Username']
+                'Password': Items['Password']['S'],
+                'FirstName': Items['FirstName']['S'],
+                'LastName': Items['LastName']['S'],
+                'UserRole': Items['UserRole']['S'],
+                'Username': Items['Username']['S']
             }
             response = json.dumps(user)
             return response
@@ -135,17 +137,20 @@ def get_user():
            if (temp_password['S'] == Password):
               user = {
                   'Email': Email,
-                  'FirstName': Items['FirstName'],
-                  'LastName': Items['LastName'],
-                  'Role': Items['UserRole'],
-                  'Username': Items['Username'],
-                  'Password': Items['Password']
+                  'FirstName': Items['FirstName']['S'],
+                  'LastName': Items['LastName']['S'],
+                  'UserRole': Items['UserRole']['S'],
+                  'Username': Items['Username']['S'],
+                  'Password': Items['Password']['S']
               }
 
               # create JWToken
-              jwtoken = encode_auth_token(user)
-              response = requests.get('http://httpbin.org/get', jwtoken)
-              return response.json()
+              #jwtoken = encode_auth_token(user)
+              #response = requests.get('http://httpbin.org/get', jwtoken)
+
+              #return response.json()
+              response = user
+              return jsonify(response)
           except ClientError as e:
             logging.debug(e.response['Error']['Message'])
             error = 'Error Email and Password doesnot match.'

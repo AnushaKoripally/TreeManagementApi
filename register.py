@@ -11,7 +11,6 @@ import requests
 import boto3
 from botocore.exceptions import ClientError
 from db_controller import get_items
-
 dynamo_client = boto3.client('dynamodb',endpoint_url = 'http://localhost:8000' )
 
 def get_user():
@@ -34,11 +33,11 @@ def get_user():
                         if (temp_password['S'] == Password):
                             user = {
                                 'Email': Email,
-                                'FirstName': Items['FirstName'],
-                                'LastName': Items['LastName'],
-                                'Role': Items['UserRole'],
-                                'Username': Items['Username'],
-                                'Password': Items['Password']
+                                'FirstName': Items['FirstName']['S'],
+                                'LastName': Items['LastName']['S'],
+                                'UserRole': Items['UserRole']['S'],
+                                'Username': Items['Username']['S'],
+                                'Password': Items['Password']['S']
                             }
 
                             # create JWToken
@@ -112,28 +111,28 @@ def register():
             return jsonify(response)
 
 
-def encode_auth_token(user):
-    """
-    Generates the Auth Token
-    :return: string
-    """
-    try:
-        payload = {
-            'exp': datetime.utcnow() + timedelta(days=0, seconds=5),
-            'iat': datetime.utcnow(),
-            'sub': user
-
-        }
-
-        return jwt.encode(
-            payload,
-            key= 'SECRETE_KEY',
-
-            # app.config.get('SECRET_KEY'),
-            algorithm='HS256'
-        )
-    except Exception as e:
-        return e
+#def encode_auth_token(user):
+#    """
+#    Generates the Auth Token
+#    :return: string
+#    """
+#    try:
+#        payload = {
+#            'exp': datetime.utcnow() + timedelta(days=0, seconds=5),
+#            'iat': datetime.utcnow(),
+#            'sub': user
+#
+#        }
+#
+#        return jwt.encode(
+#            payload,
+#            key= 'SECRETE_KEY',
+#
+#            # app.config.get('SECRET_KEY'),
+#            algorithm='HS256'
+#        )
+#    except Exception as e:
+#        return e
 
 def get_profile():
         received_json_data = request.data.decode('UTF-8')
@@ -148,10 +147,11 @@ def get_profile():
                 if (temp_email['S'] == Email):
                     user = {
                         'Email': Email,
-                        'FirstName': Items['FirstName'],
-                        'LastName': Items['LastName'],
-                        'Role': Items['UserRole'],
-                        'Username': Items['Username']
+                        'Password': Items['Password']['S'],
+                        'FirstName': Items['FirstName']['S'],
+                        'LastName': Items['LastName']['S'],
+                        'UserRole': Items['UserRole']['S'],
+                        'Username': Items['Username']['S']
                     }
                     response = json.dumps(user)
                     return response
