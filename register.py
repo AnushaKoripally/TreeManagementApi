@@ -5,7 +5,7 @@ import jwt
 from botocore.exceptions import ClientError
 import json
 from flask import Response, request, jsonify, Flask, app
-from flask_dynamo import Dynamo
+#from flask_dynamo import Dynamo
 from operator import itemgetter
 import requests
 import boto3
