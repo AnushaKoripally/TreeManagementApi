@@ -3,7 +3,7 @@ import uuid
 
 import boto3
 import requests
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify,  request
 import db_controller
 import json
 from s3_controller import download_file
@@ -237,7 +237,7 @@ def update_user():
                     response = table.update_item(
                     Key={
                         'Username': Username },
-                    UpdateExpression = "set FirstName=:fn, LastName=:ln, Email=: em, Password=:pw, UserRole=:rl, ModifiedDate=:md",
+                    UpdateExpression = "set FirstName=:fn, LastName=:ln, Email=:em, Password=:pw, UserRole=:rl, ModifiedDate=:md",
                     ExpressionAttributeValues = {
                         ':fn': FirstName,
                         ':ln': LastName,

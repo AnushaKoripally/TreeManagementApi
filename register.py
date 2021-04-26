@@ -41,9 +41,11 @@ def get_user():
                             }
 
                             # create JWToken
-                            jwtoken = encode_auth_token(user)
-                            response = requests.get('http://httpbin.org/get', jwtoken)
-                            return response.json()
+                            #jwtoken = encode_auth_token(user)
+                           # response = requests.get('http://httpbin.org/get', jwtoken)
+                            #return response.json()
+                            response = user
+                            return jsonify(response)
                     except ClientError as e:
                         logging.debug(e.response['Error']['Message'])
                         error = 'Error Email and Password doesnot match.'
@@ -181,7 +183,7 @@ def update_user():
                     response = table.update_item(
                     Key={
                         'Username': Username },
-                    UpdateExpression = "set FirstName=:fn, LastName=:ln, Email=: em, Password=:pw, UserRole=:rl, ModifiedDate=:md",
+                    UpdateExpression = "set FirstName=:fn, LastName=:ln, Email=:em, Password=:pw, UserRole=:rl, ModifiedDate=:md",
                     ExpressionAttributeValues = {
                         ':fn': FirstName,
                         ':ln': LastName,
