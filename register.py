@@ -41,11 +41,11 @@ def get_user():
                             }
 
                             # create JWToken
-                            #jwtoken = encode_auth_token(user)
-                           # response = requests.get('http://httpbin.org/get', jwtoken)
-                            #return response.json()
-                            response = user
-                            return jsonify(response)
+                            jwtoken = encode_auth_token(user)
+                            response = requests.get('http://httpbin.org/get', jwtoken)
+                            return response.json()
+                            #response = user
+                            #return jsonify(response)
                     except ClientError as e:
                         logging.debug(e.response['Error']['Message'])
                         error = 'Error Email and Password doesnot match.'
@@ -113,28 +113,28 @@ def register():
             return jsonify(response)
 
 
-#def encode_auth_token(user):
-#    """
-#    Generates the Auth Token
-#    :return: string
-#    """
-#    try:
-#        payload = {
-#            'exp': datetime.utcnow() + timedelta(days=0, seconds=5),
-#            'iat': datetime.utcnow(),
-#            'sub': user
-#
-#        }
-#
-#        return jwt.encode(
-#            payload,
-#            key= 'SECRETE_KEY',
-#
-#            # app.config.get('SECRET_KEY'),
-#            algorithm='HS256'
-#        )
-#    except Exception as e:
-#        return e
+def encode_auth_token(user):
+    """
+    Generates the Auth Token
+    :return: string
+    """
+    try:
+        payload = {
+            'exp': datetime.utcnow() + timedelta(days=0, seconds=5),
+            'iat': datetime.utcnow(),
+            'sub': user
+
+        }
+
+        return jwt.encode(
+            payload,
+            key= 'SECRETE_KEY',
+
+            # app.config.get('SECRET_KEY'),
+            algorithm='HS256'
+        )
+    except Exception as e:
+        return e
 
 def get_profile():
         received_json_data = request.data.decode('UTF-8')

@@ -14,8 +14,8 @@ from fastapi import FastAPI
 from fastapi import Request
 
 from datetime import datetime, timedelta, time
-# import jwt
-# from register import register, get_user, encode_auth_token
+import jwt
+from register import register, get_user, encode_auth_token
 from register import register, get_user
 from botocore.exceptions import ClientError
 
@@ -163,12 +163,12 @@ def get_user():
                         }
 
                         # create JWToken
-                        # jwtoken = encode_auth_token(user)
-                        # response = requests.get('http://httpbin.org/get', jwtoken)
+                        jwtoken = encode_auth_token(user)
+                        response = requests.get('http://httpbin.org/get', jwtoken)
 
-                        # return response.json()
-                        response = user
-                        return jsonify(response)
+                        return response.json()
+                        #response = user
+                        #return jsonify(response)
                 except ClientError as e:
                     logging.debug(e.response['Error']['Message'])
                     error = 'Error Email and Password doesnot match.'
