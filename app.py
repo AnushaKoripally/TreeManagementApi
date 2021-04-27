@@ -223,6 +223,8 @@ def register():
                     'ModifiedDate': {'S': date}
                 }
             )
+            if (Role == "Admin"):
+                db_controller.verify_email_identity(Email)
             response = {'Message':'Success'}
             return jsonify(response)
         except ClientError as e:
@@ -266,6 +268,9 @@ def update_user():
             },
             ReturnValues="UPDATED_NEW",
         )
+
+        if (Role == "Admin"):
+            db_controller.verify_email_identity(Email)
         return response
     except ClientError as e:
         logging.debug(e.response['Error']['Message'])

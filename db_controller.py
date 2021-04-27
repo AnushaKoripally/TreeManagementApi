@@ -3,6 +3,7 @@ import logging
 import sys
 import random
 
+from boto3.dynamodb.conditions import Key
 from flask import jsonify
 
 from s3_controller import list_files, upload_file, download_file
@@ -61,6 +62,13 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
                 'Assignee': {'S': assignee}
             }
         )
+        # send email to adminsif Priority = 1
+
+        if Priority == "1":
+            admin_users = get_admin_users()
+            print(admin_users)
+            for u in admin_users:
+                send_html_email(u, eventId, houseNumber, streetName, District, Issue, Notes)
         return '{} {} {}'.format(True, None, None)
     except Exception as e:
         logging.debug(e.response['Error']['Message'])
@@ -126,3 +134,81 @@ def get_allevents():
         print(e.response['Error']['Message'])
     else:
         return result
+
+def get_admin_users():
+    admin_users = []
+    print(admin_users)
+    try:
+        dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
+        table = dynamodb.Table('Users')
+        response = table.query(
+            # Add the name of the index
+            IndexName="Roles",
+            KeyConditionExpression=Key('UserRole').eq('Admin'),
+        )
+
+        print("The query returned the following items:")
+        for item in response['Items']:
+            admin_users.append(item['Email'])
+
+        return admin_users
+    except ClientError as e:
+        print(e.response['Error']['Message'])
+    else:
+        return response['Item']
+
+def verify_email_identity(email):
+    ses_client = boto3.client("ses")
+    response = ses_client.verify_email_identity(
+        EmailAddress= email
+    )
+    print(email)
+    print(response)
+
+def send_html_email(adminUser, eventId, houseNumber, street, district, priority, Notes):
+    ses_client = boto3.client("ses")
+    CHARSET = "UTF-8"
+    HTML_EMAIL_CONTENT = """
+        <html>
+            <head>
+              <style>
+               #heading { color: #FF0000; }
+              </style></head>
+            <h1 style='text-align:center' id=heading>Tree Management : P1 event """+eventId+""" created. Requires immediate attention!!</h1>
+            <p><strong>
+            <br>Issue: """+priority+"""
+            <br>House Number: """+houseNumber+"""
+            <br>Street: """+street+"""
+            <br>District: """+district+"""  
+            <br>Notes: """+Notes+"""
+            </strong>          
+            </p>
+            </body>
+        </html>
+    """
+    try:
+     response = ses_client.send_email(
+        Destination={
+            "ToAddresses": [
+                adminUser
+            ],
+        },
+        Message={
+            "Body": {
+                "Html": {
+                    "Charset": CHARSET,
+                    "Data": HTML_EMAIL_CONTENT,
+                }
+            },
+            "Subject": {
+                "Charset": CHARSET,
+                "Data": "Priority 1 event created",
+            },
+        },
+        Source="testccsu@gmail.com",
+    )
+    except ClientError as e:
+     print(e.response['Error']['Message'])
+    else:
+     print("Email sent! Message ID:"),
+     print(response['MessageId'])
