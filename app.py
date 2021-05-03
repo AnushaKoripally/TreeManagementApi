@@ -10,8 +10,6 @@ from s3_controller import download_file
 from json_controller import insert_newstreet, get_streetsanddistricts, delete_streetsanddistricts, insert_newIssue, \
     get_issuesandpriorities
 from flask_cors import CORS
-from fastapi import FastAPI
-from fastapi import Request
 
 from datetime import datetime, timedelta, time
 import jwt
@@ -72,14 +70,14 @@ def insert_newevent():
     issue = post.get('issue')[0]
     priority = str(post.get('priority'))
     notes = post.get('notes')
-    eventimages = post.get('eventimages')
+   # eventimages = post.get('eventimages')
     createdDate = post.get('createdDate')
     modifiedDate = post.get('modifiedDate')
     assignee = post.get('assignee')
     user = post.get('user')
     status = post.get('status')
     return jsonify(db_controller.insert_newevents(houseNumber, street, distict, issue, priority, utilityConflict, notes,
-                                                  eventimages, createdDate, modifiedDate,assignee,user,status))
+                                                   createdDate, modifiedDate,assignee,user,status))
 
 @app.route('/update-event', methods=['GET', 'POST'])
 def update_newevent():
@@ -90,11 +88,17 @@ def update_newevent():
     createdDate = post.get('createdDate')
     return jsonify(db_controller.update_newevents(notes,status,eventId,createdDate))
 
+@app.route('/update-eventimages', methods=['GET', 'POST'])
+def update_neweventimages():
+    images = request.files.getlist("file[]")
+    eventId= request.form['eventId']
+    return jsonify(db_controller.update_neweventimages(eventId,images))
 
-@app.route('/download', methods=['GET'])
+
+@app.route('/download-images', methods=['POST'])
 def downloadS3File():
-    post = json.loads(request.data)
-    eventId = post.get('eventId')
+    eventId = json.loads(request.data)
+    #eventId = post.get('eventId')
     return download_file(eventId, BUCKET)
 
 @app.route('/get-event', methods=['GET'])

@@ -1,10 +1,16 @@
+import os
+from os.path import join, dirname, realpath
+
 import boto3
 import logging
 import sys
 import random
 
+from boto.gs import acl
+from boto.s3.connection import S3Connection
 from boto3.dynamodb.conditions import Key
 from flask import jsonify
+from werkzeug.utils import secure_filename
 
 from s3_controller import list_files, upload_file, download_file
 from botocore.exceptions import ClientError
@@ -22,24 +28,12 @@ def get_items():
     )
 
 
-def insert_newevents(houseNumber, streetName, District, Issue, Priority, UtilityConflict, Notes, images, createdDate,
+def insert_newevents(houseNumber, streetName, District, Issue, Priority, UtilityConflict, Notes, createdDate,
                      modifiedDate, assignee, user, status):
     eventId: str = 'TS' + ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
 
     photos = []
     logging.info('To insert new event')
-
-    # # if request contain photos
-    # if (images.length > 0):
-    #     for p in images:
-    #         s3_response = upload_file('C:\\Users\\Shobitha\\Desktop\\' + p, BUCKET, p, eventId)
-    #         s3_response = True
-    #         if (s3_response):
-    #             s3folder = {"S": eventId + '/' + p}
-    #             photos.append(s3folder)
-    # else:
-    #     photos = []
-    # print(photos)
     try:
         response = dynamo_client.put_item(
             TableName='Events',
@@ -64,47 +58,74 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
         )
         # send email to adminsif Priority = 1
 
-        if Priority == "1":
-            admin_users = get_admin_users()
-            print(admin_users)
-            for u in admin_users:
-                send_html_email(u, eventId, houseNumber, streetName, District, Issue, Notes)
-        return '{} {} {}'.format(True, None, None)
+        # if Priority == "1":
+        #     admin_users = get_admin_users()
+        #     print(admin_users)
+        #     for u in admin_users:
+        #         send_html_email(u, eventId, houseNumber, streetName, District, Issue, Notes)
+        return eventId
     except Exception as e:
         logging.debug(e.response['Error']['Message'])
         error = 'Error while inserting record'
         print(error)
         print(e)
-        return '{} {} {} {}'.format(False, None, error, e)
+        response = {'Message': error}
+        return jsonify(response)
 
 
-def update_newevents(Notes, status,eventId,createdDate):
+def update_neweventimages(eventId, images):
+    photos: any
+    UPLOADS_PATH = join(dirname(realpath(__file__)), 'UPLOAD_FOLDER')
+    #s3_client = boto3.client('s3')
+
+    if (len(images) > 0):
+     try:
+        for p in images:
+           try:
+              file_path = os.path.join(UPLOADS_PATH, p.filename)  # path where file can be saved
+              p.save(file_path)
+              s3_response = upload_file(file_path, BUCKET, p.filename, eventId)
+              s3_response = True
+              response ="Success"
+           except ClientError as e:
+              logging.error(e)
+              response = e
+        return response
+     except ClientError as e:
+        logging.debug(e.response['Error']['Message'])
+        error = 'Error while updating record'
+        response = {'Message': error}
+        return jsonify(response)
+     finally:
+         os.remove(file_path)
+
+
+def update_newevents(Notes, status, eventId, createdDate):
     try:
-                    #table = dynamo_client.Table('Events')
-                    response = dynamo_client.update_item(
-                    TableName='Events',
-                    Key={
-                        'EventId' :{'S': eventId },
-                         'CreatedDate' : {'S': createdDate }
-                    },
-                    UpdateExpression = "set #ts=:status, Notes=:Notes",
+        # table = dynamo_client.Table('Events')
+        response = dynamo_client.update_item(
+            TableName='Events',
+            Key={
+                'EventId': {'S': eventId},
+                'CreatedDate': {'S': createdDate}
+            },
+            UpdateExpression="set #ts=:status, Notes=:Notes",
 
-                    ExpressionAttributeValues = {
-                        ':status': {'S' :status},
-                        ':Notes' : {'S' :Notes}
-                        },
-                    ExpressionAttributeNames={
-                            "#ts": "Status"
-                    },
-                    ReturnValues="UPDATED_NEW",
-                    )
-                    return response
+            ExpressionAttributeValues={
+                ':status': {'S': status},
+                ':Notes': {'S': Notes}
+            },
+            ExpressionAttributeNames={
+                "#ts": "Status"
+            },
+            ReturnValues="UPDATED_NEW",
+        )
+        return response
     except ClientError as e:
-                    logging.debug(e.response['Error']['Message'])
-                    error = 'Error while updating record'
-                    response = {'Message': error}
-                    return jsonify(response)
-
+        logging.debug(e.response['Error']['Message'])
+        error = 'Error while updating record'
+        response = {'Message': error}
+        return jsonify(response)
 
 
 def get_event(id, cdate):
@@ -135,6 +156,7 @@ def get_allevents():
     else:
         return result
 
+
 def get_admin_users():
     admin_users = []
     print(admin_users)
@@ -157,13 +179,15 @@ def get_admin_users():
     else:
         return response['Item']
 
+
 def verify_email_identity(email):
     ses_client = boto3.client("ses")
     response = ses_client.verify_email_identity(
-        EmailAddress= email
+        EmailAddress=email
     )
     print(email)
     print(response)
+
 
 def send_html_email(adminUser, eventId, houseNumber, street, district, priority, Notes):
     ses_client = boto3.client("ses")
@@ -174,41 +198,41 @@ def send_html_email(adminUser, eventId, houseNumber, street, district, priority,
               <style>
                #heading { color: #FF0000; }
               </style></head>
-            <h1 style='text-align:center' id=heading>Tree Management : P1 event """+eventId+""" created. Requires immediate attention!!</h1>
+            <h1 style='text-align:center' id=heading>Tree Management : P1 event """ + eventId + """ created. Requires immediate attention!!</h1>
             <p><strong>
-            <br>Issue: """+priority+"""
-            <br>House Number: """+houseNumber+"""
-            <br>Street: """+street+"""
-            <br>District: """+district+"""  
-            <br>Notes: """+Notes+"""
+            <br>Issue: """ + priority + """
+            <br>House Number: """ + houseNumber + """
+            <br>Street: """ + street + """
+            <br>District: """ + district + """  
+            <br>Notes: """ + Notes + """
             </strong>          
             </p>
             </body>
         </html>
     """
     try:
-     response = ses_client.send_email(
-        Destination={
-            "ToAddresses": [
-                adminUser
-            ],
-        },
-        Message={
-            "Body": {
-                "Html": {
+        response = ses_client.send_email(
+            Destination={
+                "ToAddresses": [
+                    adminUser
+                ],
+            },
+            Message={
+                "Body": {
+                    "Html": {
+                        "Charset": CHARSET,
+                        "Data": HTML_EMAIL_CONTENT,
+                    }
+                },
+                "Subject": {
                     "Charset": CHARSET,
-                    "Data": HTML_EMAIL_CONTENT,
-                }
+                    "Data": "Priority 1 event created",
+                },
             },
-            "Subject": {
-                "Charset": CHARSET,
-                "Data": "Priority 1 event created",
-            },
-        },
-        Source="testccsu@gmail.com",
-    )
+            Source="testccsu@gmail.com",
+        )
     except ClientError as e:
-     print(e.response['Error']['Message'])
+        print(e.response['Error']['Message'])
     else:
-     print("Email sent! Message ID:"),
-     print(response['MessageId'])
+        print("Email sent! Message ID:"),
+        print(response['MessageId'])

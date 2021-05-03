@@ -16,22 +16,22 @@ def upload_file(file_name, bucket,object_name,id):
 
     s3_client = boto3.client('s3')
     try:
-         response = s3_client.upload_file(file_name, bucket, id+'/{}'.format(object_name), ExtraArgs={'ACL': 'public-read'})
+         s3_client.upload_file(file_name, bucket, id+'/{}'.format(object_name), ExtraArgs={'ACL': 'public-read'})
          return True
     except FileNotFoundError as e:
-         print(response)
+         print(e.response)
          logging.debug(e.response['Error']['Message'])
          error = 'The file was not found'
          print(error)
          return '{} {} {} {}'.format(False, None, error, e)
     except NoCredentialsError as e:
-         print(response)
+         print(e.response)
          logging.debug(e.response['Error']['Message'])
          error = 'Credentials not available"'
          print(error)
          return '{} {} {} {}'.format(False, None, error, e)
     except ClientError as e:
-        print(response)
+        print(e.response)
         logging.debug(e.response['Error']['Message'])
         error = "Error while adding file to S3"
         print(error)
@@ -65,7 +65,6 @@ def download_file(eventId, bucket):
   objects = my_bucket.objects.filter(Prefix=eventId+'/')
   for obj in objects:
      path, filename = os.path.split(obj.key)
-
      my_bucket.download_file(obj.key, filename)
  except botocore.exceptions.ClientError as e:
      logging.debug(e.response['Error']['Message'])
