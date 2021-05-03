@@ -92,13 +92,17 @@ def update_newevent():
 def update_neweventimages():
     images = request.files.getlist("file[]")
     eventId= request.form['eventId']
+    print(eventId)
     return jsonify(db_controller.update_neweventimages(eventId,images))
 
 
 @app.route('/download-images', methods=['POST'])
 def downloadS3File():
     eventId = json.loads(request.data)
+    print(eventId)
     #eventId = post.get('eventId')
+
+
     return download_file(eventId, BUCKET)
 
 @app.route('/get-event', methods=['GET'])

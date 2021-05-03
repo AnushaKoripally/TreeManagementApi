@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+from os.path import join, dirname, realpath
 
 import boto3
 import logging
@@ -13,10 +14,11 @@ def upload_file(file_name, bucket,object_name,id):
     Function to upload a file to an S3 bucket
     """
     #object_name = file_name
-
+    print(file_name)
     s3_client = boto3.client('s3')
     try:
-         s3_client.upload_file(file_name, bucket, id+'/{}'.format(object_name), ExtraArgs={'ACL': 'public-read'})
+         response = s3_client.upload_file(file_name, bucket, id+'/{}'.format(object_name), ExtraArgs={'ACL': 'public-read'})
+         print(response)
          return True
     except FileNotFoundError as e:
          print(e.response)
@@ -59,13 +61,15 @@ def list_files(bucket):
 
 def download_file(eventId, bucket):
 
+ downloadPath = join(dirname(realpath(__file__)), 'DOWNLOAD_FOLDER')
  s3 = boto3.resource('s3')
  my_bucket = s3.Bucket(bucket)
  try:
-  objects = my_bucket.objects.filter(Prefix=eventId+'/')
-  for obj in objects:
-     path, filename = os.path.split(obj.key)
-     my_bucket.download_file(obj.key, filename)
+   objects = my_bucket.objects.filter(Prefix=eventId+'/')
+   for obj in objects:
+      path, filename = os.path.split(obj.key)
+      my_bucket.download_file(obj.key, downloadPath+'\\'+filename)
+   return '{} {} {}'.format(True, None, None)
  except botocore.exceptions.ClientError as e:
      logging.debug(e.response['Error']['Message'])
      error = 'Error extracting file from S3'

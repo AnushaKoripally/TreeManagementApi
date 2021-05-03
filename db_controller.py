@@ -5,9 +5,6 @@ import boto3
 import logging
 import sys
 import random
-
-from boto.gs import acl
-from boto.s3.connection import S3Connection
 from boto3.dynamodb.conditions import Key
 from flask import jsonify
 from werkzeug.utils import secure_filename
@@ -58,11 +55,11 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
         )
         # send email to adminsif Priority = 1
 
-        # if Priority == "1":
-        #     admin_users = get_admin_users()
-        #     print(admin_users)
-        #     for u in admin_users:
-        #         send_html_email(u, eventId, houseNumber, streetName, District, Issue, Notes)
+        if Priority == "1":
+             admin_users = get_admin_users()
+             print(admin_users)
+             for u in admin_users:
+                 send_html_email(u, eventId, houseNumber, streetName, District, Issue, Notes)
         return eventId
     except Exception as e:
         logging.debug(e.response['Error']['Message'])
@@ -76,8 +73,7 @@ def insert_newevents(houseNumber, streetName, District, Issue, Priority, Utility
 def update_neweventimages(eventId, images):
     photos: any
     UPLOADS_PATH = join(dirname(realpath(__file__)), 'UPLOAD_FOLDER')
-    #s3_client = boto3.client('s3')
-
+    print(len(images))
     if (len(images) > 0):
      try:
         for p in images:
@@ -87,6 +83,8 @@ def update_neweventimages(eventId, images):
               s3_response = upload_file(file_path, BUCKET, p.filename, eventId)
               s3_response = True
               response ="Success"
+              print(response)
+              os.remove(file_path)
            except ClientError as e:
               logging.error(e)
               response = e
@@ -96,8 +94,8 @@ def update_neweventimages(eventId, images):
         error = 'Error while updating record'
         response = {'Message': error}
         return jsonify(response)
-     finally:
-         os.remove(file_path)
+
+
 
 
 def update_newevents(Notes, status, eventId, createdDate):
