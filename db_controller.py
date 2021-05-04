@@ -9,7 +9,7 @@ from boto3.dynamodb.conditions import Key
 from flask import jsonify
 from werkzeug.utils import secure_filename
 
-from s3_controller import list_files, upload_file, download_file
+from s3_controller import list_files, upload_file, download_file, append_file
 from botocore.exceptions import ClientError
 from datetime import datetime
 
@@ -95,6 +95,32 @@ def update_neweventimages(eventId, images):
         response = {'Message': error}
         return jsonify(response)
 
+def update_images(eventId, images):
+    photos: any
+    UPLOADS_PATH = join(dirname(realpath(__file__)), 'UPLOAD_FOLDER')
+    print(len(images))
+    if (len(images) > 0):
+     try:
+        for p in images:
+           try:
+              file_path = os.path.join(UPLOADS_PATH, p.filename)  # path where file can be saved
+              p.save(file_path)
+              k=eventId+'/'
+              s3_response = append_file(file_path, BUCKET, k+p.filename)
+              s3_response = True
+              response ="Success"
+              print(response)
+              os.remove(file_path)
+           except ClientError as e:
+              logging.error(e)
+              response = e
+        return response
+     except ClientError as e:
+        logging.debug(e.response['Error']['Message'])
+        error = 'Error while updating record'
+        response = {'Message': error}
+        return jsonify(response)
+
 
 
 
@@ -118,7 +144,7 @@ def update_newevents(Notes, status, eventId, createdDate):
             },
             ReturnValues="UPDATED_NEW",
         )
-        return response
+        return eventId
     except ClientError as e:
         logging.debug(e.response['Error']['Message'])
         error = 'Error while updating record'
